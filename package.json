@@ -1,0 +1,36 @@
+{
+  "name": "template-dubbo",
+  "version": "1.0.0",
+  "description": "一套基于dubbo微服务的项目模板",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "rm -rf dist/ && tsc -d",
+    "start": "pm2 start dist/index.js",
+    "restart": "pm2 restart",
+    "stop": "pm2 stop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/typeservice/template-dubbo.git"
+  },
+  "keywords": [
+    "typeservice",
+    "template",
+    "dubbo",
+    "service",
+    "rpc"
+  ],
+  "author": "cevio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/typeservice/template-dubbo/issues"
+  },
+  "homepage": "https://github.com/typeservice/template-dubbo#readme",
+  "devDependencies": {
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "dependencies": {
+    "@typeservice/dubbo": "^1.0.2"
+  }
+}
